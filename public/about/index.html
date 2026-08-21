@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - BOM Component Description Enricher</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <header class="header">
+                <h1>BOM Component Description Enricher</h1>
+                <nav class="nav-links">
+                    <a href="/">Application</a>
+                    <a href="/docs">Documentation</a>
+                    <a href="/about/" class="active">About</a>
+                </nav>
+            </header>
+
+            <div class="docs-content">
+                <h2>About this tool</h2>
+                <p>BOM Component Description Enricher processes an uploaded Excel workbook one selected sheet at a time. Choose the part-number and description columns, then start the OpenRouter-backed description-enrichment workflow.</p>
+
+                <h2>What happens next</h2>
+                <ul>
+                    <li>Progress updates show how many rows have been processed.</li>
+                    <li>A preview shows the original and enriched descriptions as rows complete.</li>
+                    <li>When processing finishes, download the exported Excel file.</li>
+                </ul>
+
+                <h2>Local storage</h2>
+                <p>Processed files are written to the running server's <code>storage/results</code> directory. Temporary files use <code>storage/temp</code>, and selected sheets are cached in memory during processing. These locations depend on the host's writable filesystem and are not permanent storage.</p>
+
+                <p><a href="https://acty.dev/" style="color: #4CAF50;">acty.dev</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
